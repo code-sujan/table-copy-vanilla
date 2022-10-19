@@ -50,3 +50,19 @@ th,td {
 table {
   border-collapse: collapse;
 }
+
+#context-menu{
+  border: 1px solid black;
+  background-color: white;
+  height: 30px;
+  box-shadow: 1px 2px #888888;
+  text-align: left !important;
+  width: 100px;
+  display: none;
+  position: absolute;
+}
+
+#context-menu>a{
+  margin-left: 5px;
+  margin-top: 5px;
+}

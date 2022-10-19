@@ -141,4 +141,15 @@ export default ({ onCopy } : InitializationProps = {}) => {
         onCopy && onCopy(toCopy);
         e.preventDefault();
     })
+
+    document.body.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        const left = e.clientX;
+        const top = e.clientY;
+
+        let elem = document.querySelector("#context-menu");
+        elem.style.left = left + "px";
+        elem.style.top = top + "px";
+        elem.style.display = "block";
+    })
 };

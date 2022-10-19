@@ -2,9 +2,9 @@ import './style.css'
 import tableCopy from './table-copy'
 
 tableCopy({
-  onCopy: data => {
-    document.querySelector('textarea')!.value = data;
-  }
+    onCopy: data => {
+        document.querySelector('textarea')!.value = data;
+    }
 });
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -16,4 +16,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <textarea style="width: 100%;margin-top: 10px" rows="10"></textarea>
 
   </div>
+  
+  <div id="context-menu">
+  <a>Copy</a>
+</div>
 `
